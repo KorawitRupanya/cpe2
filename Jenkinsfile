@@ -1,5 +1,7 @@
 pipeline {
-     agent { label 'master' }
+     agent { label 'master'
+            docker { image 'a80f8902daac' }
+           }
      stages {
           stage('Source') {
                steps {
