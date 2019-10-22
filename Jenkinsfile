@@ -1,6 +1,6 @@
 pipeline {
      agent { label 'master'
-            docker { image 'a80f8902daac' }
+            docker { image 'centos' }
            }
      stages {
           stage('Source') {
